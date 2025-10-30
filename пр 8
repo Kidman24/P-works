@@ -1,0 +1,142 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+
+	setlocale(0, "");
+	
+	int a;
+	int b;
+	
+	cout << "выйти(1) или ";
+	cout << "выбрать язык: Русский(2), Английский(3)"<<endl;
+	cin >> a;
+	
+
+	if (a == 2) {
+
+		cout << "Вы выбрали Русский язык, выберите слово:"<<endl;
+		cout << "(1) Дом,(2) мама,(3) папа,(4) брат, (5) собака, (6) Путин, (7) дорога, (8) Москва, (9) победа, (10) Россия, (11) лягушка, (12) мышь, (13) школа, (14) колледж, (15)кот."<<endl;
+		cin >> b;
+
+
+		switch (b) {
+		case(1):
+			cout << "дом - home";
+			break;
+		case(2):
+			cout << "мама - mother";
+			break;
+		case(3):
+			cout << "папа - father";
+			break;
+		case(4):
+			cout << "брат - brother";
+			break;
+		case(5):
+			cout << "собака - dog";
+			break;
+		case(6):
+			cout << "Путин - Putin";
+			break;
+		case(7):
+			cout << "дорога - road";
+			break;
+		case(8):
+			cout << "Москва - Moscow";
+			break;
+		case(9):
+			cout << "победа - victory";
+			break;
+		case(10):
+			cout << "Россия - Russia";
+			break;
+		case(11):
+			cout << " лягушка - frog";
+			break;
+		case(12):
+			cout << "мышь - mouse";
+			break;
+		case(13):
+			cout << "школа - school";
+			break;
+		case(14):
+			cout << "колледж - college ";
+			break;
+		case(15):
+			cout << "кот - cat";
+			break;
+		default:
+			cout << "Вы ввели не то значение";
+
+		}
+	}
+
+
+	else if (a==3) {
+		cout << "Вы выбрали Английский язык, выберите слово:" << endl;
+		cout << "(1) home, (2) mother, (3) father, (4) brother, (5) dog, (6) Putin, (7) road, (8) Moscow, (9) victory, (10) Россия, (11) frog, (12) mouse, (13) school, (14) college,(15) cat." << endl;
+		cin >> b;
+
+
+		switch (b) {
+		case(1):
+			cout << "home - дом";
+			break;
+		case(2):
+			cout << "mother - мама";
+			break;
+		case(3):
+			cout << "father - папа";
+			break;
+		case(4):
+			cout << "brother - брат";
+			break;
+		case(5):
+			cout << "dog - собака";
+			break;
+		case(6):
+			cout << "Putin - Путин";
+			break;
+		case(7):
+			cout << "road - дороги";
+			break;
+		case(8):
+			cout << "Moscow - Москва";
+			break;
+		case(9):
+			cout << "victory - победа";
+			break;
+		case(10):
+			cout << "Russia - Россия";
+			break;
+		case(11):
+			cout << " frog - лягушка";
+			break;
+		case(12):
+			cout << "mouse - мышь";
+			break;
+		case(13):
+			cout << "school - школа";
+			break;
+		case(14):
+			cout << "college - колледж";
+			break;
+		case(15):
+			cout << "cat - кот";
+			break;
+		default:
+			cout << "Вы ввели не то значение";
+		}
+
+	}
+
+
+	else if (a==1){
+		cout << "вы вышли";
+		return 0;
+	}
+
+
+}

@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+
+	cout << "Enter the Month: " << endl;
+	cout << "[1] January" << endl;
+	cout << "[2] February" << endl;
+	cout << "[3] March" << endl;
+	cout << "[4] April" << endl;
+	cout << "[5] May" << endl;
+	cout << "[6] June" << endl;
+	cout << "[7] Jule" << endl;
+	cout << "[8] August" << endl;
+	cout << "[9] September" << endl;
+	cout << "[10] October" << endl;
+	cout << "[11] November" << endl;
+	cout << "[12] December" << endl;
+
+	int month;
+	cin >> month;
+
+	int day;
+	cout << "Enter the day: ";
+	cin >> day;
+
+	switch (month) {
+	case 1:
+		cout << "Now's January" << day;
+		break;
+	case 2:
+		cout << "Now's February" << day;
+		break;
+	case 3:
+		cout << "Now's March" << day;
+		break;
+	case 4:
+		cout << "Now's April" << day;
+		break;
+	case 5:
+		cout << "Now's May" << day;
+		break;
+	case 6:
+		cout << "Now's June" << day;
+		break;
+	case 7:
+		cout << "Now's Jule" << day;
+		break;
+	case 8:
+		cout << "Now's August" << day;
+		break;
+	case 9:
+		cout << "Now's September" << day;
+		break;
+	case 10:
+		cout << "Now's October" << day;
+		break;
+	case 11:
+		cout << "Now's November" << day;
+		break;
+	case 12:
+		cout << "Now's December" << day;
+		break;
+	default:
+		cout << "Incorrect";	
+	}
+	return 0;
+	}
+

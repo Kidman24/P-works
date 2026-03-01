@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int num;
+	int sum = 0;
+	int count = 0;
+	double average;
+
+	cout << "Enter the Number" << endl;
+	cin >> num;
+
+	while (num != 0) {
+		sum = sum + num;
+		count++;
+
+		cout << "Enter the Number" << endl;
+		cin >> num;
+	}
+	if (count > 0) {
+		average = sum / count;
+		cout << "The Arithmetic Mean is: " << average << endl;
+	}
+	else{
+		cout << "Error" << endl;
+	}
+	return 0;
+	}

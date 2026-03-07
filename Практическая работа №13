@@ -1,0 +1,78 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int ShapeChoice, LineType, MapSize, SquareType;
+	int i = 0;
+	char Texture;
+
+	cout << "Programm - Geometric Shapes" << endl;
+	cout << "Choose the Shape or Exit" << endl;
+	cout << "[1] Line [2]Square" << endl;
+	cin >> ShapeChoice;
+	system("cls");
+
+	if (ShapeChoice == 1) {
+		system("cls");
+		cout << "[1] Horizontal, [2] Vertical" << endl;
+		cin >> LineType;
+		system("cls");
+		cout << "Enter the Length of the Line: " << endl;
+		cin >> MapSize;
+		system("cls");
+		cout << "Enter the Texture of the Line: " << endl;
+		cin >> Texture;
+		system("cls");
+
+		if (MapSize == 1) {
+			while (i < MapSize) {
+				cout << Texture;
+				if (i < MapSize - 1) {
+					cout << " ";
+				}
+				i++;
+			}
+			cout << "\n";
+		}
+		else {
+			while (i < MapSize) {
+				cout << Texture << "\n";
+				i++;
+			}
+		}
+	}
+	else if (ShapeChoice == 2)
+		cout << "Enter the MapSize of the Square: " << endl;
+	cin >> MapSize;
+	system("cls");
+	cout << "Enter the Texture of the Square: " << endl;
+	cin >> Texture;
+	system("cls");
+	cout << "Choose the Type" << endl;
+	cout << "Filled [1]; Empty[2]" << endl;
+	cin >> SquareType;
+	system("cls");
+
+	if (SquareType == 1) {
+		for (int x = 0; x < MapSize; x++) {
+			for (int y = 0; y < MapSize; y++) {
+				cout << Texture << " ";
+			}
+			cout << endl;
+		}
+	}
+	else if (SquareType == 2) {
+		for (int x = 0; x < MapSize; x++) {
+			for (int y = 0; y < MapSize; y++) {
+				if (x == 0 || x == MapSize - 1 || y == 0 || y == MapSize - 1) {
+					cout << Texture << " ";
+				}
+				else {
+					cout << "  ";
+				}
+			}
+			cout << endl;
+		}
+	}
+return 0;
+}
